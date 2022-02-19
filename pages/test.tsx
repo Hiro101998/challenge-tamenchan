@@ -1,8 +1,9 @@
+import { Item } from "framer-motion/types/components/Reorder/Item";
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import { Haishi } from "./components/Haishi";
+import { Layout } from "./components/Layout";
 
 const Home: NextPage = () => {
   return (
@@ -14,7 +15,8 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <Haishi />
+        <Layout />
+        <br />
       </main>
 
       <footer className={styles.footer}>

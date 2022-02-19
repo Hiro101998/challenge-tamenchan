@@ -1,4 +1,8 @@
-export const Sample1 = [
+import React, { FC } from "react";
+import Image from "next/image";
+import { Box } from "@chakra-ui/react";
+
+export const Sample2 = [
   {
     id: "man1-1",
     name: "一萬",
@@ -40,11 +44,6 @@ export const Sample1 = [
     src: "/pai-images/man8.png",
   },
   {
-    id: "man8-1",
-    name: "八萬",
-    src: "/pai-images/man8.png",
-  },
-  {
     id: "man9-1",
     name: "九萬",
     src: "/pai-images/man9.png",
@@ -70,3 +69,21 @@ export const Sample1 = [
     src: "/pai-images/pin3.png",
   },
 ];
+
+export const TehaiSample2: FC = () => {
+  return (
+    <Box>
+      {Sample2.map((item) => {
+        return (
+          <Image
+            src={item.src}
+            key={item.id}
+            alt={item.name}
+            width={100}
+            height={100}
+          />
+        );
+      })}
+    </Box>
+  );
+};

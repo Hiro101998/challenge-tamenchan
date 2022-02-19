@@ -1,3 +1,6 @@
+import React, { FC } from "react";
+import { Image, Stack } from "@chakra-ui/react";
+// import Image from "next/image";
 export const Sample1 = [
   {
     id: "man1-1",
@@ -40,11 +43,6 @@ export const Sample1 = [
     src: "/pai-images/man8.png",
   },
   {
-    id: "man8-1",
-    name: "八萬",
-    src: "/pai-images/man8.png",
-  },
-  {
     id: "man9-1",
     name: "九萬",
     src: "/pai-images/man9.png",
@@ -70,3 +68,13 @@ export const Sample1 = [
     src: "/pai-images/pin3.png",
   },
 ];
+
+export const TehaiSample1: FC = () => {
+  return (
+    <Stack direction={"row"}>
+      {Sample1.map((item) => {
+        return <Image key={item.id} src={item.src} alt={item.name} />;
+      })}
+    </Stack>
+  );
+};
