@@ -1,6 +1,8 @@
 import React, { FC } from "react";
-import { Image, Stack } from "@chakra-ui/react";
+import { Image, Stack, Text } from "@chakra-ui/react";
 // import Image from "next/image";
+import { DragDropContext, Droppable } from "react-beautiful-dnd";
+
 export const Sample1 = [
   {
     id: "man1-1",
@@ -71,10 +73,13 @@ export const Sample1 = [
 
 export const TehaiSample1: FC = () => {
   return (
-    <Stack direction={"row"}>
-      {Sample1.map((item) => {
-        return <Image key={item.id} src={item.src} alt={item.name} />;
-      })}
-    </Stack>
+    <>
+      <Text>練習問題１</Text>
+      <Stack direction={"row"}>
+        {Sample1.map((item) => {
+          return <Image key={item.id} src={item.src} alt={item.name} />;
+        })}
+      </Stack>
+    </>
   );
 };

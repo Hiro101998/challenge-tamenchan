@@ -40,11 +40,6 @@ export const Sample1 = [
     src: "/pai-images/man8.png",
   },
   {
-    id: "man8-1",
-    name: "八萬",
-    src: "/pai-images/man8.png",
-  },
-  {
     id: "man9-1",
     name: "九萬",
     src: "/pai-images/man9.png",
