@@ -1,15 +1,15 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, FC } from "react";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import type {
   DropResult,
   DroppableProvided,
   DraggableProvided,
 } from "react-beautiful-dnd";
-import { Sample1 } from "./sample1";
-import { Box, Image, Stack } from "@chakra-ui/react";
+import { Image, Stack } from "@chakra-ui/react";
+import { Question1Haishi } from "./Question1Haishi";
 
-function BeautifulDndExample() {
-  const [state, setState] = useState(Sample1);
+export const Question1Dnd = () => {
+  const [state, setState] = useState(Question1Haishi);
   const handleDragEnd = useCallback(
     (result: DropResult) => {
       if (!result.destination) {
@@ -33,7 +33,6 @@ function BeautifulDndExample() {
             direction={"row"}
             {...provided.droppableProps}
             ref={provided.innerRef}
-            style={{ listStyleType: "none" }}
           >
             {state.map(({ id, name, src }, index) => {
               return (
@@ -45,6 +44,7 @@ function BeautifulDndExample() {
                       {...provided.dragHandleProps}
                       src={src}
                       alt={name}
+                      boxSize={{ base: 9, md: 51.5, lg: "auto" }}
                     />
                   )}
                 </Draggable>
@@ -56,8 +56,4 @@ function BeautifulDndExample() {
       </Droppable>
     </DragDropContext>
   );
-}
-
-export const Example = () => {
-  return <BeautifulDndExample />;
 };

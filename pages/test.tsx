@@ -4,6 +4,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import { Layout } from "./components/Layout";
+import { Question1Layout } from "./components/question/question1/Question1Layout";
 
 const Home: NextPage = () => {
   return (
@@ -15,7 +16,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <Layout />
+        <Question1Layout />
 
         <br />
       </main>
