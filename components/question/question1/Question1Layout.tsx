@@ -12,9 +12,15 @@ const Q1Layout = dynamic<{}>(
 export const Question1Layout = () => {
   return (
     <>
-      <Text>Q1</Text>
-      <Q1Layout />
-      <Question1AnswerButton />
+      <Text fontSize={"2xl"} mt={10} mb={5}>
+        Q1
+      </Text>
+      <Stack spacing={10}>
+        <Q1Layout />
+        <Box>
+          <Question1AnswerButton />
+        </Box>
+      </Stack>
     </>
   );
 };

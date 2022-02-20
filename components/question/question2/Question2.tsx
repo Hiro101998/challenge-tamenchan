@@ -6,10 +6,10 @@ import type {
   DraggableProvided,
 } from "react-beautiful-dnd";
 import { Image, Stack } from "@chakra-ui/react";
-import { Question1Haishi } from "./Question1Haishi";
+import { Question2Haishi } from "./Question2Haishi";
 
-export const Question1Dnd = () => {
-  const [state, setState] = useState(Question1Haishi);
+export const Question2Dnd = () => {
+  const [state, setState] = useState(Question2Haishi);
   const handleDragEnd = useCallback(
     (result: DropResult) => {
       if (!result.destination) {
