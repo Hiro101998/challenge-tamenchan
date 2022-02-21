@@ -2,7 +2,7 @@ import { Item } from "framer-motion/types/components/Reorder/Item";
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
-import QuestionList from "../components/QuestionList";
+import { QuestionLayout } from "../components/QuestionLayout";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
@@ -15,7 +15,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <QuestionList />
+        <QuestionLayout />
       </main>
 
       {/* <footer className={styles.footer}>
