@@ -6,7 +6,7 @@ type Props = {
   name: string;
   src: string;
 };
-export const Question2AnswerButton = (props: any) => {
+export const QuestionAnswerButton = (props: any) => {
   const { answer } = props;
   const [answerFlg, setAnswerFlg] = useState(false);
   const onClickAnswer = () => {
