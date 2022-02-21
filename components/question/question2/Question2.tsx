@@ -5,17 +5,18 @@ import type {
   DroppableProvided,
   DraggableProvided,
 } from "react-beautiful-dnd";
-import { Box, Image, Stack } from "@chakra-ui/react";
+import { Box, Image, Stack, Text } from "@chakra-ui/react";
 
 type Props = {
   id: string;
   name: string;
   src: string;
+  number: number;
 };
 
-export const Question2Dnd = (props: any) => {
+const Question2Dnd = (props: any) => {
   //↑をany以外にする方法を思いつけば修正
-  const { haishi } = props;
+  const { haishi, number } = props;
   const [state, setState] = useState<Array<Props>>(haishi);
   const handleDragEnd = useCallback(
     (result: DropResult) => {
@@ -34,6 +35,9 @@ export const Question2Dnd = (props: any) => {
 
   return (
     <>
+      <Text fontSize={"2xl"} mt={10} mb={5}>
+        Q{number}
+      </Text>
       <DragDropContext onDragEnd={handleDragEnd}>
         <Droppable droppableId="items" direction="horizontal">
           {(provided: DroppableProvided) => (
