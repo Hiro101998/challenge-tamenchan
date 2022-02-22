@@ -1,8 +1,13 @@
-export const Question3Answer = [
+export const Question5Answer = [
   {
     id: "pin2",
     name: "2ピン",
     src: "/pai-images/pin2.png",
+  },
+  {
+    id: "pin4",
+    name: "4pin",
+    src: "/pai-images/pin4.png",
   },
   {
     id: "pin5",
