@@ -35,6 +35,11 @@ export const Question2Haishi = [
     src: "/pai-images/sou3.png",
   },
   {
+    id: "sou3-2",
+    name: "3ソウ",
+    src: "/pai-images/sou3.png",
+  },
+  {
     id: "sou4-1",
     name: "4ソウ",
     src: "/pai-images/sou4.png",
@@ -46,22 +51,17 @@ export const Question2Haishi = [
   },
   {
     id: "sou4-3",
-    name: "4ソウ",
+    name: "8ソウ",
     src: "/pai-images/sou4.png",
   },
   {
-    id: "sou8-1",
-    name: "8ソウ",
-    src: "/pai-images/sou8.png",
+    id: "sou5-1",
+    name: "5ソウ",
+    src: "/pai-images/sou5.png",
   },
   {
-    id: "sou8-2",
-    name: "8ソウ",
-    src: "/pai-images/sou8.png",
-  },
-  {
-    id: "sou8-3",
-    name: "8ソウ",
-    src: "/pai-images/sou8.png",
+    id: "sou5-2",
+    name: "5ソウ",
+    src: "/pai-images/sou5.png",
   },
 ];
