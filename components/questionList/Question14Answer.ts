@@ -1,9 +1,4 @@
-export const Question1Answer = [
-  {
-    id: "sou1",
-    name: "1ソウ",
-    src: "/pai-images/sou1.png",
-  },
+export const Question14Answer = [
   {
     id: "sou2",
     name: "2ソウ",
@@ -18,10 +13,5 @@ export const Question1Answer = [
     id: "sou4",
     name: "4ソウ",
     src: "/pai-images/sou4.png",
-  },
-  {
-    id: "sou5",
-    name: "5ソウ",
-    src: "/pai-images/sou5.png",
   },
 ];

@@ -38,7 +38,7 @@ const CreateQuestion = (props: any) => {
   return (
     <>
       <Text fontSize={"2xl"} mt={10} mb={5}>
-        Q{number}.{title}
+        {number}.{title}
       </Text>
       <DragDropContext onDragEnd={handleDragEnd}>
         <Droppable droppableId="items" direction="horizontal">
