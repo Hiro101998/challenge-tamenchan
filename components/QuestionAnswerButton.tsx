@@ -1,12 +1,16 @@
-import { Box, Button, Image, Stack, Text } from "@chakra-ui/react";
+import { Button, Image, Stack } from "@chakra-ui/react";
 import React, { useState } from "react";
 
-type Props = {
+type AnswerData = {
   id: string;
   name: string;
   src: string;
 };
-export const QuestionAnswerButton = (props: any) => {
+
+type Props = {
+  answer: Array<AnswerData>;
+};
+export const QuestionAnswerButton = (props: Props) => {
   const { answer } = props;
   const [answerFlg, setAnswerFlg] = useState(false);
   const onClickAnswer = () => {
@@ -22,7 +26,7 @@ export const QuestionAnswerButton = (props: any) => {
         答えを確認する。
       </Button>
       <Stack direction={"row"}>
-        {answer.map((item: Props) => {
+        {answer.map((item: AnswerData) => {
           if (answerFlg) {
             return (
               <Image
