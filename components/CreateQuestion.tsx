@@ -12,12 +12,13 @@ type Props = {
   name: string;
   src: string;
   number: number;
+  title: string;
 };
 
 const CreateQuestion = (props: any) => {
   //↑をany以外にする方法を思いつけば修正
   //porpsで牌姿と何問目かを受け取る
-  const { haishi, number } = props;
+  const { haishi, number, title } = props;
   const [state, setState] = useState<Array<Props>>(haishi);
   const handleDragEnd = useCallback(
     (result: DropResult) => {
@@ -37,7 +38,7 @@ const CreateQuestion = (props: any) => {
   return (
     <>
       <Text fontSize={"2xl"} mt={10} mb={5}>
-        Q{number}
+        Q{number}.{title}
       </Text>
       <DragDropContext onDragEnd={handleDragEnd}>
         <Droppable droppableId="items" direction="horizontal">
