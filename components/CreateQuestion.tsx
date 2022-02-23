@@ -37,7 +37,7 @@ const CreateQuestion = (props: any) => {
 
   return (
     <>
-      <Text fontSize={"2xl"} mt={10} mb={5}>
+      <Text fontSize={"xl"} mt={10} mb={5}>
         {number}.{title}
       </Text>
       <DragDropContext onDragEnd={handleDragEnd}>

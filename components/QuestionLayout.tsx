@@ -62,7 +62,7 @@ export const QuestionLayout = () => {
   return (
     <>
       <Stack spacing={10} ml={{ base: 0, md: 5, lg: 20 }}>
-        <Text fontSize={{ base: "xl", md: "3xl", lg: "3xl" }} mt={10}>
+        <Text fontSize={{ base: "2xl", md: "3xl", lg: "3xl" }} mt={10}>
           覚えておくべき基本多面構成
         </Text>
         {/* propsに牌姿の配列と何問目かの値を渡すことで、問題を作成できる */}
@@ -118,7 +118,7 @@ export const QuestionLayout = () => {
         <CreateQuestion
           haishi={Question8Haishi}
           number={8}
-          title={"意識高い系3面待ち(3面待ちのくせに枚数たったの5枚)"}
+          title={"意識高い系3面待ち"}
         />
         <Box>
           <QuestionAnswerButton answer={Question8Answer} />
@@ -126,7 +126,7 @@ export const QuestionLayout = () => {
         <CreateQuestion
           haishi={Question9Haishi}
           number={9}
-          title={"ヘラクレス5面待ち(7枚構成で最大の待ち枚数17枚)"}
+          title={"ヘラクレス5面待ち"}
         />
         <Box>
           <QuestionAnswerButton answer={Question9Answer} />
