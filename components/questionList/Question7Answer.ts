@@ -1,8 +1,8 @@
 export const Question7Answer = [
   {
     id: "pin4",
-    name: "2ピン",
-    src: "/pai-images/pin2.png",
+    name: "4ピン",
+    src: "/pai-images/pin4.png",
   },
   {
     id: "pin5",
