@@ -33,7 +33,7 @@ export const QuestionAnswerButton = (props: Props) => {
                 key={item.id}
                 src={item.src}
                 alt={item.name}
-                boxSize={{ base: 20, md: "auto", lg: "auto" }}
+                boxSize={{ base: "4rem", md: "auto", lg: "auto" }}
               />
             );
           }
