@@ -58,7 +58,7 @@ const CreateQuestion = (props: any) => {
                         {...provided.dragHandleProps}
                         src={src}
                         alt={name}
-                        boxSize={{ base: 9, md: 51.5, lg: "auto" }}
+                        boxSize={{ base: 20, md: "auto", lg: "auto" }}
                       />
                     )}
                   </Draggable>
