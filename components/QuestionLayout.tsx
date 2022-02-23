@@ -110,7 +110,7 @@ export const QuestionLayout = () => {
         <CreateQuestion
           haishi={Question7Haishi}
           number={7}
-          title={"シャボの皮を被った4面(略してシャボ皮)"}
+          title={"シャボの皮を被った4面"}
         />
         <Box>
           <QuestionAnswerButton answer={Question7Answer} />
