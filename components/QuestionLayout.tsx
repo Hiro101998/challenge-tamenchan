@@ -61,8 +61,8 @@ const CreateQuestion = dynamic(() => import("./CreateQuestion"), {
 export const QuestionLayout = () => {
   return (
     <>
-      <Stack spacing={10} ml={20}>
-        <Text fontSize={"3xl"} mt={10}>
+      <Stack spacing={10} ml={{ base: 0, md: 5, lg: 20 }}>
+        <Text fontSize={{ base: "xl", md: "3xl", lg: "3xl" }} mt={10}>
           覚えておくべき基本多面構成
         </Text>
         {/* propsに牌姿の配列と何問目かの値を渡すことで、問題を作成できる */}
