@@ -61,7 +61,7 @@ const CreateQuestion = dynamic(() => import("./CreateQuestion"), {
 export const QuestionLayout = () => {
   return (
     <>
-      <Stack spacing={10} ml={{ base: 0, md: 5, lg: 20 }}>
+      <Stack spacing={10} ml={{ base: 2, md: 5, lg: 20 }}>
         <Text fontSize={{ base: "2xl", md: "3xl", lg: "3xl" }} mt={10}>
           覚えておくべき基本多面構成
         </Text>
