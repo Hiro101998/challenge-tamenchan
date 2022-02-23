@@ -47,7 +47,7 @@ import { Question18Answer } from "./questionList/Question18Answer";
 import { Question19Answer } from "./questionList/Question19Answer";
 import { Question20Answer } from "./questionList/Question20Answer";
 import { Question21Answer } from "./questionList/Question21Answer";
-import { Question22Answer } from "./questionList/Question22Answer ";
+import { Question22Answer } from "./questionList/Question22Answer";
 
 import { QuestionAnswerButton } from "./QuestionAnswerButton";
 
