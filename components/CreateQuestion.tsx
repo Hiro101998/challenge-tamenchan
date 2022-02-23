@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, memo } from "react";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import type {
   DropResult,
@@ -72,4 +72,4 @@ const CreateQuestion = (props: any) => {
     </>
   );
 };
-export default CreateQuestion;
+export default memo(CreateQuestion);
