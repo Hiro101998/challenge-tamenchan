@@ -91,11 +91,19 @@ export const QuestionLayout = () => {
         <Box>
           <QuestionAnswerButton answer={Question3Answer} />
         </Box>
-        <CreateQuestion haishi={Question4Haishi} number={4} title={"最強4面"} />
+        <CreateQuestion
+          haishi={Question4Haishi}
+          number={4}
+          title={"最強4面(全4面待ちの中でも最大の待ち枚数14枚)"}
+        />
         <Box>
           <QuestionAnswerButton answer={Question4Answer} />
         </Box>
-        <CreateQuestion haishi={Question5Haishi} number={5} title={"秀才4面"} />
+        <CreateQuestion
+          haishi={Question5Haishi}
+          number={5}
+          title={"秀才4面(4面待ちの中で待ち枚数第2位13枚)"}
+        />
         <Box>
           <QuestionAnswerButton answer={Question5Answer} />
         </Box>
@@ -110,7 +118,7 @@ export const QuestionLayout = () => {
         <CreateQuestion
           haishi={Question7Haishi}
           number={7}
-          title={"シャボの皮を被った4面"}
+          title={"シャボの皮を被った4面(略してシャボ皮)"}
         />
         <Box>
           <QuestionAnswerButton answer={Question7Answer} />
@@ -118,7 +126,7 @@ export const QuestionLayout = () => {
         <CreateQuestion
           haishi={Question8Haishi}
           number={8}
-          title={"意識高い系3面待ち"}
+          title={"意識高い系3面待ち(3面待ちのくせに待ち枚数たったの5枚)"}
         />
         <Box>
           <QuestionAnswerButton answer={Question8Answer} />
@@ -126,7 +134,7 @@ export const QuestionLayout = () => {
         <CreateQuestion
           haishi={Question9Haishi}
           number={9}
-          title={"ヘラクレス5面待ち"}
+          title={"ヘラクレス5面待ち(7枚構成で最大の待ち枚数17枚)"}
         />
         <Box>
           <QuestionAnswerButton answer={Question9Answer} />
